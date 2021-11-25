@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "bmv"
+version = "0.0.2"
+description = "Rename and move epub files"
+authors = [
+    { name = "Kartik Singh", email = "kartik.ynwa@gmail.com" },
+]
+classifiers = [ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",]
+dependencies = [
+  "epub_meta >=0.0.7",
+  "python-slugify >=5.0.2"
+]
+
+[project.scripts]
+bmv = "bmv:main"
